@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule ,routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DragdropComponent } from './dragdrop/dragdrop.component';
 // import { DepartmentListComponent } from './department-list/department-list.component';
 // import { EmployeeListComponent } from './employee-list/employee-list.component';
 
@@ -11,7 +12,8 @@ import { AppComponent } from './app.component';
     AppComponent,
     // DepartmentListComponent,
     // EmployeeListComponent
-    routingComponents
+    routingComponents,
+    DragdropComponent
   ],
   imports: [
     BrowserModule,
