@@ -5,3 +5,27 @@ border-radius: 50%;
 margin: 0 auto;
 border: 2px dashed #cccccc;
 }
+
+.holder_default {
+    width: 500px;
+    height: 180px;
+    border: 10px dashed #ccc;
+}
+
+#holder.hover {
+    width: 400px;
+    height: 180px;
+    border: 10px dashed #0c0 !important;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+#image_dropped{
+    width:500px; height:180px; border: 10px dashed #7A97FC;
+}
