@@ -1,0 +1,84 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Karma", sans-serif
+}
+
+.w3-bar-block .w3-bar-item {
+  padding: 20px
+}
+
+.padding-16{
+  padding-top: 16px!important;
+  padding-bottom: 16px!important;
+}
+.right{
+  float: right!important;
+}
+.center{
+  text-align: center!important;
+}
+.left{
+  float: left!important;
+}
+
+.xlarge{
+  font-size: 24px!important;
+}
+.animate-left{
+  animation: animate 0.4s;
+  /* transition:1s;
+  left: 0; */
+}
+.card{
+  box-shadow:0 2px 5px 0 rgba(0,0,0,0,1.6),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+.sidebar{
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  overflow: auto;
+}
+.top{
+  top:0;
+}
+.bar-block, .bar-item{
+  padding: 20px;
+  width: 100%;
+  display: block;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0;
+  text-decoration: none;
+}
+.bar-item:hover{
+  background: #e2dfdf;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  height: 100px; 
+  border: 1px solid black;
+}
+
+#slide {
+  position: absolute;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background: blue;
+  transition: 1s;
+}
+
+.wrapper:hover #slide {
+  transition: 1s;
+  left: 0;
+}

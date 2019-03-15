@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+<nav class="sidebar bar-block card top xlarge animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" (click)="closeNav()" class="bar-item btn">Close Menu</a>
+  <a href="javascript:;" (click)="closeNav()" class="bar-item btn">Food</a>
+  <a href="javascript:;" (click)="closeNav()" class="bar-item btn">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="top">
+  <div class="white xlarge" style="max-width:1200px;margin:auto">
+    <div class="padding-16 left" (click)="openNav()">☰</div>
+    <div class="right padding-16">Mail</div>
+    <div class="center padding-16">My Food</div>
+  </div>
+</div>
+
+<div class="wrapper">
+  <img id="slide" src="http://lorempixel.com/output/cats-q-c-100-100-4.jpg" />
+</div>

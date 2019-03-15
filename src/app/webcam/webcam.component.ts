@@ -74,31 +74,32 @@ export class WebcamComponent implements OnInit {
     // get the real base64 content of the file
     var realData = block[1].split(",")[1];// In this case "iVBORw0KGg...."
     // Convert to blob
+    this.profilepic=realData
     var blob = this.b64toBlob(realData, contentType,0);
     // Create a FormData and append the file
     var fd = new FormData(form);
     fd.append("uploadFile", blob);
     // Submit Form and upload file
-    var thiss = this;
-    $.ajax({
-        url: "http://localhost:3000/upload",
-        data: fd,// the formData function is available in almost all new browsers.
-        type: "POST",
-        contentType: false,
-        processData: false,
-        cache: false,
-        dataType: "json", // Change this according to your response from the server.
-        error: function (err) {
-          console.error(err);
-        },
-        success: function (data) {
-          console.log(data['fileid']);
-          // this.profilepic = 'http://localhost:3000/image/' + data['fileid'];
-         },
-        complete: function () {
-          // console.log("Request finished.");
-        }
-    });
+    // var thiss = this;
+    // $.ajax({
+    //     url: "http://localhost:3000/upload",
+    //     data: fd,// the formData function is available in almost all new browsers.
+    //     type: "POST",
+    //     contentType: false,
+    //     processData: false,
+    //     cache: false,
+    //     dataType: "json", // Change this according to your response from the server.
+    //     error: function (err) {
+    //       console.error(err);
+    //     },
+    //     success: function (data) {
+    //       console.log(data['fileid']);
+    //       // this.profilepic = 'http://localhost:3000/image/' + data['fileid'];
+    //      },
+    //     complete: function () {
+    //       // console.log("Request finished.");
+    //     }
+    // });
 } 
 
 }
